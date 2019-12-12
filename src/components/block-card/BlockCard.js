@@ -2,7 +2,6 @@ import React from 'react';
 import './block-card.css';
 
 const BlockCard = ({ block }) => {
-  console.log(block);
   return (
     <div className="block-card card">
       <ul className="list-group list-group-flush">
@@ -29,7 +28,7 @@ const BlockCard = ({ block }) => {
           <h6>Random</h6>
           <small className="text-muted">{ block.random }</small>
         </li>
-        
+
         <li className="list-group-item">
           <h6>Timestamp</h6>
           <small className="text-muted">{ block.timestamp }</small>

@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import BlockCard from '../../components/block-card/BlockCard';
 import './home.css';
-const { Blockchain } = require('../../services/blockChain');
+const { initChain } = require('../../store/store');
 
-const initChain = new Blockchain();
 const Home = () => {
   const [chain, setChain] = useState(initChain);
   const [blocks, setBlocks] = useState(chain.chain);
-  // const block = chain
 
   return (
     <div className="home container mt-2">
