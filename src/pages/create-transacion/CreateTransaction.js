@@ -3,8 +3,8 @@ import './create-transaction.css';
 
 const initTrans = {
   from: '04c1a5b2e99d166855a46f98fc92045e988b3a2f5b3bfd8fe9ea67e8575f54ead8d83de22813df14d6eaf05c6859a52c7a71101f4875273682f091245f792e5176',
-  to: null,
-  amount: null,
+  to: '',
+  amount: '',
   timestamp: Date.now()
 };
 
@@ -66,8 +66,9 @@ const CreateTransaction = () => {
 
         setTrans({
           ...trans,
-          amount: null
+          amount: ''
         });
+        console.log(trans);
       }, 3000);
 
       return;
