@@ -1,10 +1,24 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './pages/home/Home';
+import Setting from './pages/setting/Setting';
+import CreateTransaction from './pages/create-transacion/CreateTransaction';
+import WalletDetail from './pages/wallet-detail/WalletDetail';
+import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <h1>hi</h1>
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/setting" component={Setting} />
+        <Route path="/create" component={CreateTransaction}/>
+        <Route path="/wallet/:key" component={WalletDetail} />
+      </Switch>
     </div>
+    </BrowserRouter>
   );
 }
 

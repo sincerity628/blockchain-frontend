@@ -126,14 +126,14 @@ class Blockchain {
 
       // check the original block
       let originBlock = JSON.stringify(this.createNewBlock());
-      if(JSON.stringify(this.chain[0]) != originBlock) {
+      if(JSON.stringify(this.chain[0]) !== originBlock) {
         console.log('warning! The block(0) has been changed.');
         return false;
       }
     }
     return true;
   }
-  
+
 }
 
 module.exports.Blockchain = Blockchain;

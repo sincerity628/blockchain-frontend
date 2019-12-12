@@ -1,0 +1,18 @@
+.card {
+  width: 20rem;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.origin-title {
+  color: grey;
+  margin-left: 10px;
+}
+
+.list-group-item {
+  padding: 20px;
+}
