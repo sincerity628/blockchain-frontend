@@ -12,7 +12,7 @@ const BlockCard = ({ block }) => {
                 <small className="origin-title">(origin block)</small>
             ) : null}
           </h5>
-          <br />
+
         </li>
         <li className="list-group-item">
           <h6>Hash</h6>
@@ -24,10 +24,12 @@ const BlockCard = ({ block }) => {
             { block.prevHash === '0'? ('0') : (block.prevHash.substring(0, 37) + "...") }
           </small>
         </li>
+
         <li className="list-group-item">
           <h6>Random</h6>
           <small className="text-muted">{ block.random }</small>
         </li>
+        
         <li className="list-group-item">
           <h6>Timestamp</h6>
           <small className="text-muted">{ block.timestamp }</small>
