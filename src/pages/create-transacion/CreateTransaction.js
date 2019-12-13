@@ -54,7 +54,7 @@ const CreateTransaction = () => {
           isError: true,
           errorText: '还有交易信息没有填写完整噢！'
         });
-      }, 3000);
+      }, 1000);
 
       return;
     }
@@ -75,7 +75,7 @@ const CreateTransaction = () => {
           amount: ''
         });
 
-      }, 3000);
+      }, 1000);
 
       return;
     }
@@ -92,7 +92,7 @@ const CreateTransaction = () => {
         history.push('/trans-queue');
       }, 2000);
 
-    }, 3000);
+    }, 2000);
 
   }
 

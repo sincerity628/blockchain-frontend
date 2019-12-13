@@ -11,5 +11,9 @@
 }
 
 .queue-alert {
+  padding: 20px 0;
+}
+
+.no-alert {
   padding: 20px 0 0 20px;
 }
