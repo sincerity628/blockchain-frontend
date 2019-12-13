@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './transaction-queue.css';
-const { transQueue, mineTheTransactionQueue } = require('../../store/store');
+const { initChain } = require('../../store/store');
 
 const TransactionQueue = () => {
+  const [chain, setChain] = useState(initChain);
+  const [queue, setQueue] = useState(chain.transactionQueue);
 
   const handleClick = () => {
-    console.log(transQueue[0].from);
-    mineTheTransactionQueue(transQueue[0].from);
+    chain.mineTheTransactionQueue(queue[0].from);
     console.log('mine success.');
-
   }
 
   return (
@@ -16,7 +16,7 @@ const TransactionQueue = () => {
       <h1>Transaction Queue</h1>
       <p className="text-dark">这个队列存放的交易记录将会出现在下一个区块中，若要封装此区块，需要开始挖矿过程。</p>
       <br />
-      { transQueue.length? (
+      { queue.length? (
         <div>
         <div className="card queue-card">
           <table className="table">
@@ -31,7 +31,7 @@ const TransactionQueue = () => {
             </tr>
             </thead>
             <tbody>
-              { transQueue.map((trans, index) => {
+              { queue.map((trans, index) => {
                 return(
                   <tr key={trans.timestamp}>
                     <th scope="col">{ index }</th>

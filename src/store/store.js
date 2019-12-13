@@ -14,9 +14,3 @@ export const addTransaction = (trans) => {
   transaction.signTransaction(myKey);
   initChain.addTransaction(transaction);
 }
-
-export const transQueue = initChain.transactionQueue;
-
-export const mineTheTransactionQueue = (walletAddress) => {
-  initChain.mineTheTransactionQueue(walletAddress);
-}
