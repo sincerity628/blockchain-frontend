@@ -13,9 +13,9 @@ const Home = () => {
       <p className="text-dark">每张卡片代表了区块链上的一个区块，点击对应的区块查看其包含的相应交易信息。</p>
 
       <div className="container px-0 card-container">
-        { blocks.map((block) => {
+        { blocks.map((block, index) => {
           return (
-            <BlockCard block={block} key={block.hash} />
+            <BlockCard block={block} index={index} key={block.hash} />
           );
         }) }
       </div>

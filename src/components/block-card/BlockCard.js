@@ -1,12 +1,12 @@
 import React from 'react';
 import './block-card.css';
 
-const BlockCard = ({ block }) => {
+const BlockCard = ({ block, index }) => {
   return (
     <div className="block-card card">
       <ul className="list-group list-group-flush">
         <li className="list-group-item">
-          <h5 className="card-title">Block1
+          <h5 className="card-title">Block{index + 1}
             { block.prevHash === '0'? (
                 <small className="origin-title">(origin block)</small>
             ) : null}
@@ -15,11 +15,11 @@ const BlockCard = ({ block }) => {
         </li>
         <li className="list-group-item">
           <h6>Hash</h6>
-          <small style={{color: "#" + block.hash.substring(0, 6)}}>
+          <small style={{color: "#" + block.hash.substring(1, 7)}}>
             { block.hash.substring(0, 37) + "..." }
           </small>
           <h6 className="mt-2">Hash of previous block</h6>
-          <small style={{color: "#" + block.prevHash.substring(0, 6)}} className="pb-2">
+          <small style={{color: "#" + block.prevHash.substring(1, 7)}} className="pb-2">
             { block.prevHash === '0'? ('0') : (block.prevHash.substring(0, 37) + "...") }
           </small>
         </li>

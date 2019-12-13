@@ -74,7 +74,7 @@ const CreateTransaction = () => {
           ...trans,
           amount: ''
         });
-        console.log(trans);
+
       }, 3000);
 
       return;
@@ -133,7 +133,7 @@ const CreateTransaction = () => {
             <br />
             <label htmlFor="amount" className="mt-3">Amount</label>
             <input id="amount" value={trans.amount} onChange={handleChange} className="form-control" />
-            <small className="text-secondary">填入交易数量</small>
+            <small className="text-secondary">填入交易数量。 </small>
 
           </div>
           <button className="btn btn-primary mt-3">

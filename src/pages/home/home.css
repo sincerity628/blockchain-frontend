@@ -1,4 +1,5 @@
 .card-container {
+  margin-top: 50px;
   overflow-x: scroll;
   white-space: nowrap;
 }

@@ -13,5 +13,10 @@ export const addTransaction = (trans) => {
   const transaction = new Transaction(trans.from, trans.to, trans.amount);
   transaction.signTransaction(myKey);
   initChain.addTransaction(transaction);
-  console.log(JSON.stringify(initChain, null, 3));
+}
+
+export const transQueue = initChain.transactionQueue;
+
+export const mineTheTransactionQueue = (walletAddress) => {
+  initChain.mineTheTransactionQueue(walletAddress);
 }

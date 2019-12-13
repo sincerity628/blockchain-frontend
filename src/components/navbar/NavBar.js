@@ -9,6 +9,10 @@ const NavBar = () => {
         <span className="brand-text">xxf</span>Chain
       </Link>
       <div>
+        <Link to="/trans-queue" className="btn btn-outline-light mr-3">
+          交易队列
+          <span className="badge badge-light ml-2">!</span>
+        </Link>
         <Link to="/setting" className="btn btn-outline-light mr-3">设置</Link>
         <Link to="/create" className="btn btn-outline-light">创建交易</Link>
       </div>
