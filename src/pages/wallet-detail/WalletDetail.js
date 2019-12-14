@@ -10,6 +10,11 @@ const WalletDetail = (props) => {
   const [chain, setChain] = useState(initChain);
   const [trans, setTrans] = useState(chain.getTrans(walletID));
 
+  const handleWarning = () => {
+    setChain(initChain);
+    setTrans(chain.getTrans(walletID));
+  }
+
   return (
     <div className="wallet-detail container mt-2" key={walletID}>
       <h1>Wallet details</h1>
@@ -23,6 +28,7 @@ const WalletDetail = (props) => {
       <h1 className="mt-5">Transactions</h1>
       <TransactionTable queue={trans} />
 
+      <div onClick={handleWarning}></div>
     </div>
   );
 }

@@ -27,10 +27,18 @@ const CreateTransaction = () => {
 
   const handleChange = e => {
     setError(initError);
-    setTrans({
-      ...trans,
-      [e.target.id]: e.target.value,
-    });
+    if(e.target.id === 'amount') {
+      setTrans({
+        ...trans,
+        amount: Number(e.target.value)
+      });
+
+    } else {
+      setTrans({
+        ...trans,
+        [e.target.id]: e.target.value,
+      });
+    }
   }
 
   const handleSubmit = e => {

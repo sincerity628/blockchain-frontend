@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark">
       <Link to="/" className="nav-brand h3">
-        <span className="brand-text">xxf</span>Chain
+        <span className="brand-text">flying</span>Chain
       </Link>
       <div>
         <Link to="/trans-queue" className="btn btn-outline-light mr-3">
