@@ -57,6 +57,7 @@ const Setting = () => {
                 <button className="btn btn-outline-secondary">确定</button>
               </div>
             </div>
+            <small className="text-secondary">难度值代表了封装一个区块的难易程度（计算区块哈希值时前几位为0的个数）。</small>
 
             <br />
 
@@ -67,6 +68,8 @@ const Setting = () => {
                 <button className="btn btn-outline-secondary">确定</button>
               </div>
             </div>
+            <small className="text-secondary">Award值代表封装一个区块系统会给予的奖励。</small>
+
           </div>
         </form>
       </div>
