@@ -21,7 +21,7 @@ const TransactionTable = ({ queue }) => {
   }
 
   return (
-    <table className="table">
+    <table className="table table-striped">
       <thead>
       <tr>
         <th scope="col">#</th>
@@ -40,9 +40,9 @@ const TransactionTable = ({ queue }) => {
               <td className="from-to">
                 { trans.from === null? (
                   <div>
-                    null
+                    System
                     <br />
-                    <small className="text-secondary">(system)</small>
+                    <small className="text-secondary">(mining award)</small>
                   </div>
                 ) : (
                   <div>
@@ -52,7 +52,7 @@ const TransactionTable = ({ queue }) => {
                     </Link>
                     <br />
                     { trans.from.substring(0, 14) === '04c1a5b2e99d16'? (
-                      <small className="text-secondary">(这是你！)</small>
+                      <small className="text-secondary">(这是你)</small>
                     ) : null }
                   </div>
                 ) }
@@ -62,8 +62,9 @@ const TransactionTable = ({ queue }) => {
                   { trans.to.substring(0,14) }
                   { trans.to.length > 14? '...' : null }
                 </Link>
+                <br />
                 { trans.to.substring(0, 14) === '04c1a5b2e99d16'? (
-                  <small className="text-secondary">(这是你！)</small>
+                  <small className="text-secondary">(这是你)</small>
                 ) : null }
               </td>
               <td>{ trans.amount }</td>

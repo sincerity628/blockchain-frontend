@@ -15,11 +15,11 @@ const BlockCard = ({ block, index }) => {
         </li>
         <li className="list-group-item">
           <h6>Hash</h6>
-          <small style={{color: "#" + block.hash.substring(1, 7)}}>
+          <small style={{color: "#" + block.hash.substring(6, 12)}}>
             { block.hash.substring(0, 37) + "..." }
           </small>
           <h6 className="mt-2">Hash of previous block</h6>
-          <small style={{color: "#" + block.prevHash.substring(1, 7)}} className="pb-2">
+          <small style={{color: "#" + block.prevHash.substring(6, 12)}} className="pb-2">
             { block.prevHash === '0'? ('0') : (block.prevHash.substring(0, 37) + "...") }
           </small>
         </li>

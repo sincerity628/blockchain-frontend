@@ -98,6 +98,20 @@ class Blockchain {
     return balence;
   }
 
+  getTrans(address) {
+    let queue = [];
+
+    for(const block of this.chain) {
+      for(const trans of block.transaction) {
+        if(trans.from === address || trans.to === address) {
+          queue.push(trans);
+        }
+      }
+    }
+
+    return queue;
+  }
+
   isChainValid() {
     for(let i = 0; i < this.chain.length; i++) {
       let currentBlock = this.chain[i];

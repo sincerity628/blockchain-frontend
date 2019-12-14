@@ -89,9 +89,9 @@ const CreateTransaction = () => {
       setTimeout(() => {
         setSuccess(false);
         history.push('/trans-queue');
-      }, 2000);
+      }, 1000);
 
-    }, 2000);
+    }, 1000);
 
   }
 
@@ -131,7 +131,7 @@ const CreateTransaction = () => {
             <small className="text-secondary">这是你想转钱对象的地址（由公钥产生）当然，也可以随机填写一些字符串。</small>
             <br />
             <label htmlFor="amount" className="mt-3">Amount</label>
-            <input id="amount" value={trans.amount} onChange={handleChange} className="form-control" />
+            <input id="amount" value={trans.amount} type="number" onChange={handleChange} className="form-control" />
             <small className="text-secondary">填入交易数量。 </small>
 
           </div>
