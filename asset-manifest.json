@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.d7bf9935.chunk.css",
-    "main.js": "./static/js/main.bb26fce8.chunk.js",
-    "main.js.map": "./static/js/main.bb26fce8.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.e5954f7d.js",
-    "runtime-main.js.map": "./static/js/runtime-main.e5954f7d.js.map",
-    "static/js/2.032daf34.chunk.js": "./static/js/2.032daf34.chunk.js",
-    "static/js/2.032daf34.chunk.js.map": "./static/js/2.032daf34.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.1ad0bc0b2f3203a592c04e3290a409e1.js": "./precache-manifest.1ad0bc0b2f3203a592c04e3290a409e1.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.d7bf9935.chunk.css.map": "./static/css/main.d7bf9935.chunk.css.map",
-    "static/js/2.032daf34.chunk.js.LICENSE": "./static/js/2.032daf34.chunk.js.LICENSE"
+    "main.css": "/blockchain-frontend/static/css/main.d7bf9935.chunk.css",
+    "main.js": "/blockchain-frontend/static/js/main.a29434e4.chunk.js",
+    "main.js.map": "/blockchain-frontend/static/js/main.a29434e4.chunk.js.map",
+    "runtime-main.js": "/blockchain-frontend/static/js/runtime-main.c9acadda.js",
+    "runtime-main.js.map": "/blockchain-frontend/static/js/runtime-main.c9acadda.js.map",
+    "static/js/2.032daf34.chunk.js": "/blockchain-frontend/static/js/2.032daf34.chunk.js",
+    "static/js/2.032daf34.chunk.js.map": "/blockchain-frontend/static/js/2.032daf34.chunk.js.map",
+    "index.html": "/blockchain-frontend/index.html",
+    "precache-manifest.5c8917337d6efad3a189afbe8df68c73.js": "/blockchain-frontend/precache-manifest.5c8917337d6efad3a189afbe8df68c73.js",
+    "service-worker.js": "/blockchain-frontend/service-worker.js",
+    "static/css/main.d7bf9935.chunk.css.map": "/blockchain-frontend/static/css/main.d7bf9935.chunk.css.map",
+    "static/js/2.032daf34.chunk.js.LICENSE": "/blockchain-frontend/static/js/2.032daf34.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.e5954f7d.js",
+    "static/js/runtime-main.c9acadda.js",
     "static/js/2.032daf34.chunk.js",
     "static/css/main.d7bf9935.chunk.css",
-    "static/js/main.bb26fce8.chunk.js"
+    "static/js/main.a29434e4.chunk.js"
   ]
 }
