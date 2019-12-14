@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/blockchain-frontend/static/css/main.d7bf9935.chunk.css",
-    "main.js": "/blockchain-frontend/static/js/main.a29434e4.chunk.js",
-    "main.js.map": "/blockchain-frontend/static/js/main.a29434e4.chunk.js.map",
+    "main.js": "/blockchain-frontend/static/js/main.041f62ea.chunk.js",
+    "main.js.map": "/blockchain-frontend/static/js/main.041f62ea.chunk.js.map",
     "runtime-main.js": "/blockchain-frontend/static/js/runtime-main.c9acadda.js",
     "runtime-main.js.map": "/blockchain-frontend/static/js/runtime-main.c9acadda.js.map",
     "static/js/2.032daf34.chunk.js": "/blockchain-frontend/static/js/2.032daf34.chunk.js",
     "static/js/2.032daf34.chunk.js.map": "/blockchain-frontend/static/js/2.032daf34.chunk.js.map",
     "index.html": "/blockchain-frontend/index.html",
-    "precache-manifest.5c8917337d6efad3a189afbe8df68c73.js": "/blockchain-frontend/precache-manifest.5c8917337d6efad3a189afbe8df68c73.js",
+    "precache-manifest.b27234be09eecb0bb3f8da5645931a9d.js": "/blockchain-frontend/precache-manifest.b27234be09eecb0bb3f8da5645931a9d.js",
     "service-worker.js": "/blockchain-frontend/service-worker.js",
     "static/css/main.d7bf9935.chunk.css.map": "/blockchain-frontend/static/css/main.d7bf9935.chunk.css.map",
     "static/js/2.032daf34.chunk.js.LICENSE": "/blockchain-frontend/static/js/2.032daf34.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c9acadda.js",
     "static/js/2.032daf34.chunk.js",
     "static/css/main.d7bf9935.chunk.css",
-    "static/js/main.a29434e4.chunk.js"
+    "static/js/main.041f62ea.chunk.js"
   ]
 }

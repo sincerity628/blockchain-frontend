@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7dcc62864c3f0772ab4315a4bf1367b",
+    "revision": "28bd1ac59fcbdcbddc6b0dc063a4a883",
     "url": "/blockchain-frontend/index.html"
   },
   {
-    "revision": "c38ba72cb4f3b1ebc9a1",
+    "revision": "4486c2ce3f1bb6daabf7",
     "url": "/blockchain-frontend/static/css/main.d7bf9935.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blockchain-frontend/static/js/2.032daf34.chunk.js.LICENSE"
   },
   {
-    "revision": "c38ba72cb4f3b1ebc9a1",
-    "url": "/blockchain-frontend/static/js/main.a29434e4.chunk.js"
+    "revision": "4486c2ce3f1bb6daabf7",
+    "url": "/blockchain-frontend/static/js/main.041f62ea.chunk.js"
   },
   {
     "revision": "bc326868296176345460",
