@@ -2,7 +2,7 @@
   "name": "chianblock-basis",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sincerity628.github.io/blockchain-frontend",
+  "homepage": "https://sincerity628.github.io/blockchain-frontend/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
