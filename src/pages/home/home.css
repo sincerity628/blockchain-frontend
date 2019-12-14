@@ -2,4 +2,20 @@
   margin-top: 50px;
   overflow-x: scroll;
   white-space: nowrap;
+  padding-bottom: 20px;
+}
+
+.click-card {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.clicked-card {
+  box-shadow: 5px 5px 10px #cfc8d0;
+}
+
+.transactions {
+  margin-bottom: 300px;
 }
