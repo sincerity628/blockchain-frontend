@@ -40,7 +40,7 @@ const Home = () => {
       <div className="container mt-3 transactions">
         <h1>Transactions inside block{clickedIndex + 1}</h1>
         { transaction.length? (
-          <TransactionTable queue={transaction} />
+          <TransactionTable queue={transaction} isDisplay={false} />
         ) : (
           <p>此区块不含交易信息</p>
         ) }

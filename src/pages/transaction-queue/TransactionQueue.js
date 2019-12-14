@@ -74,7 +74,7 @@ const TransactionQueue = () => {
       { queue.length? (
         <div>
         <div className="card queue-card">
-          <TransactionTable queue={queue} />
+          <TransactionTable queue={queue} isDisplay={false} />
         </div>
         <button className="btn btn-primary mt-4" onClick={handleClick}>
           { btnLoading? (

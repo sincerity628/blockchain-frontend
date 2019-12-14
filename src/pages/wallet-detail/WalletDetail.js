@@ -27,7 +27,7 @@ const WalletDetail = (props) => {
 
       <h1 className="mt-5">Transactions</h1>
       { trans.length? (
-        <TransactionTable queue={trans} />
+        <TransactionTable queue={trans} isDisplay={true} />
       ) : (
         <p>此用户暂无相关交易记录</p>
       ) }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TransactionTable = ({ queue }) => {
+const TransactionTable = ({ queue, isDisplay }) => {
 
   const timeTrans = (timestamp) => {
     let date = new Date(timestamp);
@@ -44,22 +44,42 @@ const TransactionTable = ({ queue }) => {
                   </div>
                 ) : (
                   <div>
-                    <Link to={`/wallet/${trans.from}`}>
-                      { trans.from.substring(0, 14) }
-                      { trans.from.length > 14? '...' : null }
-                    </Link>
+
+                    { isDisplay? (
+                      <span>
+                        { trans.from.substring(0, 14) }
+                        { trans.from.length > 14? '...' : null }
+                      </span>
+                    ) : (
+                      <Link to={`/wallet/${trans.from}`}>
+                        { trans.from.substring(0, 14) }
+                        { trans.from.length > 14? '...' : null }
+                      </Link>
+                    ) }
+
                     <br />
+
                     { trans.from.substring(0, 14) === '04c1a5b2e99d16'? (
                       <small className="text-secondary">(这是你)</small>
                     ) : null }
+
                   </div>
                 ) }
               </td>
               <td className="from-to">
-                <Link to={`/wallet/${trans.to}`}>
-                  { trans.to.substring(0,14) }
-                  { trans.to.length > 14? '...' : null }
-                </Link>
+
+                { isDisplay? (
+                  <span>
+                    { trans.to.substring(0,14) }
+                    { trans.to.length > 14? '...' : null }
+                  </span>
+                ) : (
+                  <Link to={`/wallet/${trans.to}`}>
+                    { trans.to.substring(0,14) }
+                    { trans.to.length > 14? '...' : null }
+                  </Link>
+                ) }
+
                 <br />
                 { trans.to.substring(0, 14) === '04c1a5b2e99d16'? (
                   <small className="text-secondary">(这是你)</small>
