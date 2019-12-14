@@ -38,7 +38,6 @@ const CreateTransaction = () => {
 
     setBtnLoading(true);
 
-    console.log(trans);
     setTrans({
       ...trans,
       timeStamp: Date.now()

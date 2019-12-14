@@ -63,8 +63,7 @@ class Blockchain {
     block.hash = block.calculateHash();
 
     block.mine(this.difficulty);
-    console.log('mining success.');
-
+    
     this.chain.push(block);
     this.transactionQueue = [];
   }
@@ -132,6 +131,11 @@ class Blockchain {
       }
     }
     return true;
+  }
+
+  setChain(difficulty, miningAward) {
+    this.difficulty = difficulty;
+    this.miningAward = miningAward;
   }
 
 }
