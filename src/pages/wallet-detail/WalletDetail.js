@@ -26,7 +26,11 @@ const WalletDetail = (props) => {
       <div>{ chain.getBalence(walletID) }</div>
 
       <h1 className="mt-5">Transactions</h1>
-      <TransactionTable queue={trans} />
+      { trans.length? (
+        <TransactionTable queue={trans} />
+      ) : (
+        <p>此用户暂无相关交易记录</p>
+      ) }
 
       <div onClick={handleWarning}></div>
     </div>

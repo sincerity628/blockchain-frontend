@@ -42,7 +42,7 @@ const Home = () => {
         { transaction.length? (
           <TransactionTable queue={transaction} />
         ) : (
-          <p>此区块不含交易信息噢！</p>
+          <p>此区块不含交易信息</p>
         ) }
 
       </div>
