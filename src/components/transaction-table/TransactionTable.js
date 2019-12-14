@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const TransactionTable = ({ queue }) => {
+
+  const [time, setTime] = useState('');
+
+  const timeTrans = (timestamp) => {
+    let date = new Date(timestamp);
+    let year = (date.getYear() + 1900).toString();
+    let month = (date.getMonth() + 1).toString();
+    let day = (date.getDate()).toString();
+    let hour = (date.getHours()).toString();
+    let min = (date.getMinutes()).toString();
+    let sec = (date.getSeconds()).toString();
+    month = month < 10 ? '0' + month : month;
+    day = day < 10 ? '0' + day : day;
+    hour = hour < 10 ? '0' + hour : hour;
+    sec = sec < 10 ? '0' + sec : sec;
+    return year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec;
+  }
+
   return (
     <table className="table">
       <thead>
@@ -45,7 +63,11 @@ const TransactionTable = ({ queue }) => {
                 ) : null }
               </td>
               <td>{ trans.amount }</td>
-              <td>{ trans.timestamp }</td>
+              <td>
+                { trans.timestamp }
+                <br />
+                <small className="text-secondary">{timeTrans(trans.timestamp)}</small>
+              </td>
               { trans.isValid()? (
                 <td>✓</td>
               ) : (
