@@ -17,7 +17,7 @@ const Setting = () => {
     setDifficulty(chain.difficulty);
     setAward(chain.miningAward);
 
-  }, [difficulty, award]);
+  }, [chain.difficulty, chain.miningAward]);
 
   const handleChange = (e) => {
     setSetting({

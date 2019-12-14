@@ -43,7 +43,12 @@ const TransactionQueue = () => {
       setSuccess(initSuccess);
 
     }, 2000);
-  }
+  };
+
+  const handleWarning = () => {
+    setChain(initChain);
+    setQueue(chain.transactionQueue);
+  };
 
   return (
   <div>
@@ -84,6 +89,7 @@ const TransactionQueue = () => {
         </div>
         ) }
       </div>
+      <div onClick={handleWarning}></div>
     </div>
   );
 }

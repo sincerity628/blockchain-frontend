@@ -1,6 +1,4 @@
 const sha256 = require('crypto-js/sha256');
-const EC = require('elliptic').ec;
-const ec = EC('secp256k1');
 const { Transaction } = require('./transaction');
 
 
@@ -24,7 +22,7 @@ class Block {
       this.random ++;
       this.hash = this.calculateHash();
     }
-    console.log('Block mined: ' + this.hash);
+    // console.log('Block mined: ' + this.hash);
   }
 
   hasValidTransaction() {
@@ -63,7 +61,7 @@ class Blockchain {
     block.hash = block.calculateHash();
 
     block.mine(this.difficulty);
-    
+
     this.chain.push(block);
     this.transactionQueue = [];
   }

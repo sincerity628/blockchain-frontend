@@ -7,6 +7,11 @@ const Home = () => {
   const [chain, setChain] = useState(initChain);
   const [blocks, setBlocks] = useState(chain.chain);
 
+  const handleWarning = () => {
+    setChain(initChain);
+    setBlocks(chain.chain);
+  };
+
   return (
     <div className="home container mt-2">
       <h1>Blocks on chain</h1>
@@ -19,6 +24,7 @@ const Home = () => {
           );
         }) }
       </div>
+      <div onClick={handleWarning}></div>
     </div>
   );
 }
