@@ -5,7 +5,7 @@ import './navbar.css';
 const NavBar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <Link to="/" className="nav-brand h3">
+      <Link to="/home" className="nav-brand h3">
         <span className="brand-text">flying</span>Chain
       </Link>
       <div>

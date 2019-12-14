@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route path="/home" component={Home} />
         <Route path="/setting" component={Setting} />
         <Route path="/create" component={CreateTransaction}/>
         <Route path="/wallet/:key" component={WalletDetail} />
