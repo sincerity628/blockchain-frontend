@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const TransactionTable = ({ queue }) => {
 
@@ -45,8 +46,10 @@ const TransactionTable = ({ queue }) => {
                   </div>
                 ) : (
                   <div>
-                    { trans.from.substring(0, 14) }
-                    { trans.from.length > 14? '...' : null }
+                    <Link to={`/wallet/${trans.from}`}>
+                      { trans.from.substring(0, 14) }
+                      { trans.from.length > 14? '...' : null }
+                    </Link>
                     <br />
                     { trans.from.substring(0, 14) === '04c1a5b2e99d16'? (
                       <small className="text-secondary">(这是你！)</small>
@@ -55,9 +58,10 @@ const TransactionTable = ({ queue }) => {
                 ) }
               </td>
               <td className="from-to">
-                { trans.to.substring(0,14) }
-                { trans.to.length > 14? '...' : null }
-                <br />
+                <Link to={`/wallet/${trans.to}`}>
+                  { trans.to.substring(0,14) }
+                  { trans.to.length > 14? '...' : null }
+                </Link>
                 { trans.to.substring(0, 14) === '04c1a5b2e99d16'? (
                   <small className="text-secondary">(这是你！)</small>
                 ) : null }
