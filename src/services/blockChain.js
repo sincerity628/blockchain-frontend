@@ -9,7 +9,6 @@ class Block {
     this.transaction = transaction;
     // changeable
     this.random = 0;
-
     this.hash = this.calculateHash();
   }
 
